@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Soothe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+
+<body>
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="/" id="navbar_logo">
+            <img id="main_img" src="assets/newlogo1.png"></a>
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="/dashboard" class="navbar_links">My Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="/resources" class="navbar_links">Resources</a>
+          </li>
+          <li class="navbar_item">
+            <a href="/movingforward" class="navbar_links">Move</a>
+          </li>
+          <li class="navbar_btn"><a href="/" class="button">Sign out</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="main">
+      <div class="main_container">
+        <div class="main_content">
+          <img id="main_img" src="assets/newwater.png">
+          <div class="overlay_text">
+            <% if (message && firstName) { %>
+                <h1 class="alert alert-success">
+                    <%= message %> <%= firstName %>!
+                </h1>
+                <h2>Time to pick up where you left off...</h2>
+                <br>
+                <br>
+                <p>This is where you can go back in to your planned workout routines, your weekly planner
+                  for adding structure to your week and your mood tracker. These are all valuable tools
+                  to keep track of the things you are doing well, what contributes to feeling positive about
+                  your life and planning for the immediate future.</p>
+                  <br>
+                  <br>
+                  <h2>Keep going, you are doing great!</h2>
+            <% } else if (message) { %>
+                <h1 class="alert alert-success">
+                    <%= message %>
+                </h1>
+            <% } %>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <h1>Choose where to resume your wellness journey</h1>
+      <div class="services_container">
+          <div class="services_card">
+            <img id="card_img1" src="assets/gymforcard.png" style="width: 100%; height: 100%">
+              <h2>Your workouts</h2>
+              <button>Let's Go</button>
+          </div>
+          <div class="services_card">
+            
+              <h2>Your weekly planner</h2>
+              <button>Plan</button>
+          </div>
+          <div class="services_card">
+            <img id="card_img1" src="assets/goodmood.png" style="width: 100%; height: 100%; justify-content:stretch ">
+              <h2>Your mood tracker</h2>
+              <button>Track</button>
+          </div>
+      </div>
+  </div>
+  
+      <div class="footer_container">
+        <div class="footer_links">
+          <div class="footer_link--wrapper">
+            <div class="footer_link--items">
+              <h2>About Us</h2>
+              <a href="/">Meet the team</a> <a href="/">Our vision</a>
+              <a href="/">The future</a>
+            </div>
+            <div class="footer_link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+            </div>
+          </div>
+          <div class="footer_link--wrapper">
+            <div class="footer_link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">X</a>
+            </div>
+          </div>
+        </div>
+            <p class="website_rights">© Soothe All rights reserved</p>
+          </div>
+        </section>
+      </div>
+<script></script>
+</body>
+</html>
